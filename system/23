@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    23                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/10 16:40:39 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 16:42:07 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#Explain how connect yourself as new user. (With graphic session and ssh session)
+
+#Deduction:
+
+1) You need to enter your login and password in graphic session;
+2) type ssh '<username>@<ip>' then enter your password.

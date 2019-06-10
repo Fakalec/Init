@@ -1,0 +1,60 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/04 18:43:51 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/05 05:50:38 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+
+#Find the provider of slash16.org
+
+a=$(nslookup slash16.org | grep Address | tail -n1 | awk '{print $2}')
+
+#Deduction:
+
+echo "\n${MAGENTA}Find the provider of slash16.org:\n"
+echo "To find the provider of slash16.org we need to "
+echo "find DNS of slash.org with 'nslookup' function "
+echo "and then use one of the proposed addresses and "
+echo "         paste it with fuction 'whois'"
+echo ""
+sleep 0.5
+echo "I'm waiting for you to read and then I'll show"
+echo "           slash16.org provider"
+sleep 1
+echo ".....................10......................."
+sleep 1
+echo ".....................9........................"
+sleep 1
+echo ".....................8........................"
+sleep 1
+echo ".....................7........................"
+sleep 1
+echo ".....................6........................"
+sleep 1
+echo ".....................5........................"
+sleep 1
+echo ".....................4........................"
+sleep 1
+echo ".....................3........................"
+sleep 1
+echo ".....................2........................"
+sleep 1
+echo ".....................1........................"
+sleep 1
+echo ".....................0........................"
+sleep 5
+echo "\n\033[0;37m[13]    47784 segmentation fault\n"
+sleep 7
+echo "${MAGENTA}Thats joke)) All is okey! Look:"
+sleep 2
+echo "\n${YELLOW}$(whois $a | grep 255.255)\n"

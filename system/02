@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/06 17:42:27 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 15:38:41 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#What command can you use to rename your system?
+
+echo "${MAGENTA}\nThe command that rename your system is:\n"
+echo "${RED}hostname 'your name'\n"
+echo "${YELLOW}$(hostname kek)\n"

@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    07                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/03 11:30:35 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/07 02:32:17 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Query an external DNS server on the slash16.org domain name
+
+echo "${MAGENTA}\nDisplay an external DNS server on the slash16.org domain name:\n"
+echo "${RED}nslookup slash16.org 8.8.8.8\n"
+echo "${YELLOW}$(nslookup slash16.org 8.8.8.8)\n"

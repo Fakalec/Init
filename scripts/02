@@ -1,0 +1,25 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/07 08:58:42 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/07 09:44:57 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Write a script which delete an ACTIVE user on the VM.
+
+a=$(cat /etc/passwd | awk -F: '{if ($3 >= 1000 && $3 <= 9999) print $1}')
+
+echo "${MAGENTA}\nScript which delete an ACTIVE user on the VM:\n"
+echo "${RED}userdel $a\n"
+echo "${YELLOW}$(userdel $a)\n"

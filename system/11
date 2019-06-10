@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    11                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/10 15:51:29 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 15:54:36 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Name the command that displays the available space left and used on the system in an humanly understandable way
+
+echo "${MAGENTA}\nThe command that displays the available space left and usedi is:\n"
+echo "${RED}df -h\n"
+echo "${YELLOW}$(df -h)\n"

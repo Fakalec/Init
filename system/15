@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    15                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/10 15:54:47 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 16:08:42 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED]]]'
+
+#Find the command that kills the background command’s process
+
+echo "${MAGENTA}\nThe command that kills the background command’s process is:\n"
+echo "${RED}kill 'PID'\n"
+echo "${YELLOW}$(kill 'PID')\n"

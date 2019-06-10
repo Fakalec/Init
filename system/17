@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    17                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/10 15:54:47 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 16:23:21 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED]]]'
+
+#Find the command that allows you to connect via ssh on the VM.(In parallel with the graphic session)
+
+echo "${MAGENTA}\nThe command that allows to connect via ssh on the VM is:\n"
+echo "${RED}ssh 'login@127.0.0.1'\n"
+echo "${YELLOW}$(ssh login@127.0.0.1)\n"

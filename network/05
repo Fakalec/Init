@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    05                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/02 21:34:18 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/07 02:32:23 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Identify the IP address of the DNS that responds to the following url:
+#slash16.org
+
+echo "${MAGENTA}\nDisplay the IP address of the DNS that responds to the following url:\n"
+echo "${RED}nslookup slash16.org | grep Server | awk {'print $2'}\n"
+echo "${YELLOW}$(nslookup slash16.org | grep Server | awk {'print $2'})\n"

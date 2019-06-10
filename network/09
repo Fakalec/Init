@@ -1,0 +1,26 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    09                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/04 23:21:21 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/05 05:23:27 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'			#MAGENTA
+
+#Find the external IP of 42.fr
+
+echo "\n${MAGENTA}Just look on this IP's:\n"
+
+#echo "${YELLOW}$(nslookup 42.fr | grep Address: | tail -n3 | awk '{print $2}')\n"
+
+echo "${YELLOW}163.172.250.13
+163.172.250.11
+163.172.250.12\n"

@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    07                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/06 18:11:16 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 15:42:22 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Figure out the PID of the SSHD service.
+
+echo "${MAGENTA}\nTo display the PID of the SSHD service u need to clac clac:\n"
+echo "${RED}ps aux | grep /usr/sbin/sshd | awk '{print $2}'\n"
+echo "${YELLOW}$(ps aux | grep /usr/sbin/sshd | awk '{print $2}')\n"

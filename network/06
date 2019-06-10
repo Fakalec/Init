@@ -1,0 +1,27 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    06                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/02 22:29:35 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/05 05:49:02 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+
+#Get the complete path of the file that contains the IP address
+#of the DNS server you’re using
+
+echo "${MAGENTA}\nDisplay the complete path of the file that contains the IP address of the DNS server this computer using:\n"
+
+echo "${YELLOW}$(cat /etc/resolv.conf)\n"
+
+#Deduction:
+The file that contains the IP address of the used
+DNS server allocated in /etc/ and named resolv.conf

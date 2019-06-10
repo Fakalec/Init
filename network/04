@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/02 17:20:42 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/07 02:31:01 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Identifiy the default gateway in the routing table
+
+echo "${MAGENTA}\nDisplay the default gateway in the routing table:\n"
+echo "${RED}route -n get default | grep gateway | awk '{print $2}'\n"
+echo "${YELLOW}$(route -n get default | grep gateway | awk {'print $2'})\n"

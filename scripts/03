@@ -1,0 +1,30 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/07 09:48:23 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 16:46:45 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+GREEN='\033[0;31m'			#GREEN
+MAGENTA='\033[0;35m'		#MAGENTA
+
+#Three’s a Charm. Write a script of you choice.
+
+echo "${MAGENTA}\nOh yeah I can write my own cool script\n"
+
+
+lines_counter ()
+{
+	cat $1 | wc -l
+}
+
+number=$( lines_counter $1 )
+
+echo "${GREEN}The file $1 has $number lines.\n"

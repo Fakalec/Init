@@ -1,0 +1,33 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/02 16:16:51 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/07 02:28:51 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Identify and display the Ethernet interface characteristics:
+# 1)Identify broadcast address
+
+a=$(ifconfig en0 | grep broadcast | awk {'print $6'})
+echo "\n${MAGENTA}Display broadcast address:\n"
+echo "${RED}ifconfig en0 | grep broadcast | awk {'print $6'}\n"
+echo "${YELLOW}$a\n"
+
+# 2)Identify all IP adresses which are part of the same subnet
+
+echo "${MAGENTA}Display IP addresses which are part of same subnet this computer used:\n"
+echo "${RED}ping -on | ifconfig en0 | grep broadcast | awk '{print $6}' | grep 'DOROVICHI'"
+echo "${RED}arp -a | grep school | awk '{print $2}' | cut -d '(' -f2 | rev | cut -d ')' -f2 | rev\n"
+ping -on $a | grep 'DOROVICHI'
+echo "${YELLOW}$(arp -a | grep school | awk {'print $2'} | cut -d "(" -f2 | rev | cut -d ")" -f2 | rev)\n"

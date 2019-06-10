@@ -1,0 +1,26 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/02 14:21:09 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/07 02:23:43 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Get the list of the network interfaces of the machine without displaying any
+#detail for these interfaces. Only the list of names.
+
+echo "${MAGENTA}\nDisplay the list of the network interfaces of the machine:\n"
+
+echo "${RED}ifconfig -l\n"
+
+echo "${YELLOW}$(ifconfig -l)\n"

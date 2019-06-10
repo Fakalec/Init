@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    13                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/10 15:54:47 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 16:05:17 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED]]]'
+
+#Name the command that find, in real time, currently running processes
+
+echo "${MAGENTA}\nThe command that find, in real time, currently running processes is:\n"
+echo "${RED}top"
+echo "${YELLOW}"
+top

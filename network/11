@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    11                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/05 03:43:44 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/05 05:48:16 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#Use the output of the previous command to find the name and IP address of the
+#device that makes the link between you (local network) and the outside world
+
+#Deduction:
+
+Using the previous command we get IP's of the routers that we used:
+2-nd line show us what local router help us to connect with the outside world
+(192.168.2.9)

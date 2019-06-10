@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    15                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/05 05:29:51 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/05 05:47:46 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#Make the intra.42.fr address reroute to 46.19.122.85
+
+We need to add following IP 46.19.122.85 and hostname intra.42.fr in /private/etc/hosts
+To do this we must have root permissions

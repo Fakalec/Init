@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/10 15:42:25 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 15:46:24 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#What file contains the RSA keys of systems that are authorized to connect via SSH?
+
+#Deduction:
+
+2 files contains RSA keys:
+
+1) ~/.ssh/id_rsa (private)
+2) ~/.ssh/id_rsa.pub (public)

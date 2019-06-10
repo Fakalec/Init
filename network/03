@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/02 17:07:06 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/07 02:30:09 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Identify the MAC address of the Wi-Fi card
+
+echo "${MAGENTA}\nDisplay the MAC address of the Wi-Fi card:\n"
+echo "${RED}networksetup -getmacaddress wi-fi | awk '{print $3}'\n"
+echo "${YELLOW}$(networksetup -getmacaddress wi-fi | awk {'print $3'})\n"

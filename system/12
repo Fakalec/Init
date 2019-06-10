@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    12                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/10 15:54:47 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 16:00:41 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED]]]'
+
+#Figure out the exact size of each folder of /var in a humanly understandable way followed by the path of it.
+
+echo "${MAGENTA}\nThe command that show size of each folder of /var:\n"
+echo "${RED}du -h /var/*\n"
+echo "${YELLOW}$(du -h /var/*)\n"

@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    06                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/06 18:08:36 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 15:41:46 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Name the command that reboots the SSH service.
+
+echo "${MAGENTA}\nThe command that reboots the SSH service is:\n"
+echo "${RED}service sshd restart\n"
+echo "${YELLOW}$(service sshd restart)\n"

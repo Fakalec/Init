@@ -1,0 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/10 16:12:02 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 16:15:07 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#Find the service which makes it possible to run specific tasks following a regular schedule
+
+#Deduction
+
+The service which makes it possible to run specific tasks following a regular schedule is:
+
+crontab (-e flag helps you to set regular schedule for any tasks)

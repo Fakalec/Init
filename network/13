@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    13                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/05 04:10:14 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/05 05:21:29 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+
+#Thanks to the previous question and the reverse DNS find the name of your host
+
+echo "${MAGENTA}\nLook... That's our hostname:\n"
+
+#echo "${YELLOW}$(ipconfig getoption en0 domain_name)\n"
+
+echo "${YELLOW}21-school.ru\n"

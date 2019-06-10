@@ -1,0 +1,30 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    10                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/04 23:26:38 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/07 02:34:51 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Identify the network devices between your computer and the slash16.org domain
+
+echo "${MAGENTA}\nDisplay the network devices between your computer and the slash16.org domain:\n"
+echo "${RED}nslookup slash16.org | grep Address | tail -n1 | awk '{print $2}'\n"
+echo "${RED}traceroute | nslookup slash16.org | grep Address | tail -n1 | awk '{print $2}'\n"
+a=$(nslookup slash16.org | grep Address | tail -n1 | awk '{print $2}')
+
+echo "${YELLOW}"
+
+traceroute $a
+
+echo "\n"

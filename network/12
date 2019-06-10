@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    12                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/05 03:55:08 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/07 02:35:31 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Find the IP that was assigned to you by dhcp server
+
+echo "${MAGENTA}\nDisplay the IP that was assigned to this computer by dhcp server:\n"
+echo "${RED}ipconfig getoption en0 server_identifier\n"
+echo "${YELLOW}$(ipconfig getoption en0 server_identifier)\n"

@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    14                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/10 15:54:47 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 16:07:36 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED]]]'
+
+#Run the ‘tail -f /var/log/syslog‘ command in background
+
+echo "${MAGENTA}\nThe command that runs the ‘tail -f /var/log/syslog‘ command in background is:\n"
+echo "${RED}tail -f /var/log/syslog &\n"
+echo "${YELLOW}$(tail -f /var/log/syslog &)\n"

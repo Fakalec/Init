@@ -1,0 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/06 17:51:20 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 15:39:34 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+#What file has to be modified to make it permanent?
+
+#Deduction
+
+We need to modified the /etc/hostname file:
+
+echo 'your name' > /etc/hostname

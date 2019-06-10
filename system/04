@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/06 17:54:03 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/10 15:40:09 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#What command gives you the time since your system was last booted?
+
+echo "${MAGENTA}\nThe command gives the time since the system was last booted is:\n"
+echo "${RED}uptime\n"
+echo "${YELLOW}$(uptime)\n"

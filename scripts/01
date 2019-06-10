@@ -1,0 +1,23 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dstracke <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/07 08:38:42 by dstracke          #+#    #+#              #
+#    Updated: 2019/06/07 08:55:57 by dstracke         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!/bin/bash
+
+YELLOW='\033[0;33m'			#YELLOW
+MAGENTA='\033[0;35m'		#MAGENTA
+RED='\033[0;31m'			#RED
+
+#Write a script which displays only the login, UID and Path of each entry of the /etc/passwd file.
+
+echo "${MAGENTA}\nScript which displays login | UID | Path of the /etc/passwd l by l:\n"
+echo "${RED}cat /etc/passwd | awk -F: 'print $1"|"$4"|"$7'\n"
+echo "${YELLOW}$(cat /etc/passwd | awk -F: 'print $1"|"$4"|"$7')\n"
